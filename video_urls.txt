@@ -1,0 +1,10 @@
+# TikTok视频链接文件
+# 请将您要下载评论的TikTok视频链接放在下面，每行一个链接
+# 支持的链接格式示例：
+# https://www.tiktok.com/@username/video/1234567890123456789
+# https://vm.tiktok.com/ZMxxxxxx/
+# https://www.tiktok.com/t/ZTxxxxxx/
+
+# 请删除下面的示例链接，并替换为您实际要下载的视频链接：
+# https://www.tiktok.com/@example_user/video/1234567890123456789
+# https://www.tiktok.com/@another_user/video/9876543210987654321

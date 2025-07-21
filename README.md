@@ -506,3 +506,132 @@ Web main interface:
 > Start: 2021/11/06
 
 > GitHub: [@Evil0ctal](https://github.com/Evil0ctal)
+
+# TikTok视频评论批量下载工具 - 新手完整教程
+
+## 📋 功能介绍
+- ✅ 批量获取TikTok视频评论区的评论
+- ✅ 保存用户昵称和评论内容
+- ✅ 导出为Excel文件(.xlsx格式)
+- ✅ 支持上百个视频链接批量处理
+- ✅ 每个视频可获取1000+条评论
+
+## 🚀 第一步：安装Python
+
+### Windows用户：
+1. 访问 https://www.python.org/downloads/
+2. 点击"Download Python 3.11.x"按钮
+3. 下载完成后，双击安装文件
+4. **重要**：安装时勾选"Add Python to PATH"选项
+5. 点击"Install Now"完成安装
+
+### Mac用户：
+1. 访问 https://www.python.org/downloads/
+2. 下载Mac版本的Python安装包
+3. 双击.pkg文件安装
+
+### Linux用户：
+```bash
+sudo apt update
+sudo apt install python3 python3-pip
+```
+
+## 🛠️ 第二步：验证Python安装
+
+1. 按下 `Windows键 + R`，输入 `cmd`，按回车打开命令提示符
+2. 输入以下命令验证：
+```bash
+python --version
+```
+如果显示Python版本号，说明安装成功。
+
+## 📦 第三步：安装必要的库
+
+在命令提示符中依次输入以下命令：
+
+```bash
+pip install requests
+pip install openpyxl
+pip install beautifulsoup4
+pip install selenium
+pip install webdriver-manager
+```
+
+## 🌐 第四步：安装Chrome浏览器
+
+如果您还没有Chrome浏览器：
+1. 访问 https://www.google.com/chrome/
+2. 下载并安装Chrome浏览器
+
+## 📁 第五步：创建工作文件夹
+
+1. 在桌面上创建一个新文件夹，命名为"TikTok评论下载器"
+2. 将下载的脚本文件放入这个文件夹
+
+## 🎯 第六步：准备视频链接
+
+创建一个名为 `video_urls.txt` 的文本文件，每行放一个TikTok视频链接，例如：
+```
+https://www.tiktok.com/@username/video/1234567890123456789
+https://www.tiktok.com/@username/video/9876543210987654321
+https://www.tiktok.com/@username/video/1111222233334444555
+```
+
+## ▶️ 第七步：运行脚本
+
+1. 打开命令提示符
+2. 使用 `cd` 命令进入您创建的文件夹：
+```bash
+cd Desktop/TikTok评论下载器
+```
+3. 运行脚本：
+```bash
+python tiktok_comments_downloader.py
+```
+
+## 📊 第八步：查看结果
+
+脚本运行完成后，会在同一文件夹中生成以下文件：
+- `tiktok_comments_YYYYMMDD_HHMMSS.xlsx` - 包含所有评论的Excel文件
+- `download_log.txt` - 下载日志文件
+
+## 🔧 常见问题解决
+
+### 问题1：提示"python不是内部或外部命令"
+**解决方案**：重新安装Python，确保勾选"Add Python to PATH"
+
+### 问题2：无法安装库
+**解决方案**：尝试使用以下命令：
+```bash
+python -m pip install --upgrade pip
+pip install --user 库名称
+```
+
+### 问题3：Chrome驱动问题
+**解决方案**：脚本会自动下载Chrome驱动，确保网络连接正常
+
+### 问题4：获取评论数量少
+**解决方案**：
+- 检查网络连接
+- 视频可能设置了评论权限
+- 尝试增加等待时间
+
+## ⚠️ 注意事项
+
+1. **遵守使用条款**：请遵守TikTok的使用条款和robots.txt
+2. **合理使用**：不要过于频繁地请求，避免被限制访问
+3. **网络稳定**：确保网络连接稳定，下载大量数据需要时间
+4. **备份数据**：重要数据请及时备份
+5. **隐私保护**：请尊重用户隐私，合法使用获取的数据
+
+## 📞 技术支持
+
+如果遇到问题，请检查：
+1. Python版本是否正确（推荐3.8+）
+2. 所有依赖库是否安装成功
+3. Chrome浏览器是否为最新版本
+4. 网络连接是否稳定
+
+## 🎉 完成！
+
+按照以上步骤，您就可以开始批量下载TikTok视频评论了！脚本会自动处理所有技术细节，您只需要提供视频链接即可。
